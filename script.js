@@ -30,7 +30,7 @@ function promptForAccess() {
     while (attempts < 3) {
         const userInput = prompt("Introduce la palabra clave para acceder a los retos: La clave de acceso se encuentra en el arbol de navidad").toLowerCase();
         if (userInput === keyword) {
-            typeText(outputDiv, "Bienvenido a los retos de programación en terminal.\nEscribe la respuesta al primer reto para continuar:\n\n" + challenges[0].question);
+            typeText(outputDiv, "Hola Andrea! Papa Noel te ha traido un regalito pero ha tenido un problema, los elfos han perdido el codigo de accceso al regalo, vas a tener que encontrarlo.\nEscribe la respuesta al primer reto para continuar:\n\n" + challenges[0].question);
             return;
         } else {
             alert("Palabra clave incorrecta. Intenta nuevamente.");
