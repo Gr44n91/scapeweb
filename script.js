@@ -27,7 +27,7 @@ function typeText(element, text, speed = 25) {
 function promptForAccess() {
     const keyword = "19112178";
     let attempts = 0;
-    while (attempts < 5) {
+    while (attempts < 3) {
         const userInput = prompt(`Introduce la palabra clave para acceder a los retos: 
             La clave de acceso se encuentra en el arbol de navidad. Recuerda todas las respuestas son numéricas 
             y tienes 5 intentos para acceder. Si tienes que usar la calculadora o Google hazlo desde otro movil`).toLowerCase();
