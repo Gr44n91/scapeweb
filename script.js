@@ -25,7 +25,7 @@ function typeText(element, text, speed = 25) {
 //typeText(outputDiv, "Hola Andrea! Papa Noel te ha traido un regalito pero ha tenido un problema, los elfos han perdido el codigo de accceso al regalo, vas a tener que encontrarlo.\nEscribe la respuesta al primer reto para continuar:\n\n" + challenges[0].question);
 
 function promptForAccess() {
-    const keyword = "19112178";
+    const keyword = "9191614";
     let attempts = 0;
     while (attempts < 3) {
         const userInput = prompt(`Introduce la palabra clave para acceder a los retos: 
