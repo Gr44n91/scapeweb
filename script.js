@@ -2,7 +2,7 @@ const challenges = [
     { question: "Reto 1: Ponme de lado y soy todo. Córtame por la mitad y no soy nada. ¿Qué soy?", answer: "8" },
     { question: "Reto 2: Los elfos tienen hambre, estaria bien ofrecerle una naranja...", answer: "4525" },
     { question: "Reto 3: ¿Cuantas Bolas tiene el arbol de navidad?", answer: "10" },
-    { question: "Reto 4: Tienes que llamar a este numero XXXXX por videollamada desde un movil que no sea el tuyo y conseguir que te den la clave de acceso...", answer: "1212"}
+    { question: "Reto 4: Bien ya estamos terminando... Tienes que llamar a este numero XXXXX por videollamada desde un movil que no sea el tuyo y conseguir que te den la clave de acceso...", answer: "1212"}
 ];
 
 let currentChallenge = 0;
@@ -64,7 +64,7 @@ inputField.addEventListener('keypress', function(event) {
             if (currentChallenge < challenges.length) {
                 typeText(outputDiv, `\n\nCorrecto! ${challenges[currentChallenge].question}`);
             } else {
-                typeText(outputDiv, "\n\n¡Felicidades! Has completado todos los retos.");
+                typeText(outputDiv, "\n\n¡Felicidades! Has completado todos los retos. Aqui tienes la clave:");
                 playVideo();
             }
         } else {
