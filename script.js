@@ -1,8 +1,8 @@
 const challenges = [
     { question: "Reto 1: Ponme de lado y soy todo. Córtame por la mitad y no soy nada. ¿Qué soy?", answer: "8" },
-    { question: "Reto 2: Los elfos tienen hambre, estaria bien ofrecerle una naranja...", answer: "4525" },
-    { question: "Reto 3: ¿Cuantas Bolas tiene el arbol de navidad?", answer: "10" },
-    { question: "Reto 4: Bien ya estamos terminando... Tienes que llamar a este numero XXXXX por videollamada desde un movil que no sea el tuyo y conseguir que te den la clave de acceso...", answer: "1212"}
+    { question: "Reto 2: Los elfos de Papá Noel están hambrientos, estaría bien ofrecerle una naranja...", answer: "4525" },
+    { question: "Reto 3: ¿Cuántas bolas tiene el árbol de navidad?", answer: "74" },
+    { question: "Reto 4: Bien, ya estamos terminando... Tienes que llamar a este número 661621591 o 652571259 por videollamada de Whatsapp desde un móvil que no sea el tuyo y conseguir que te den la clave de acceso...", answer: "1212"}
 ];
 
 let currentChallenge = 0;
@@ -29,8 +29,8 @@ function promptForAccess() {
     let attempts = 0;
     while (attempts < 3) {
         const userInput = prompt(`Introduce la palabra clave para acceder a los retos: 
-            La clave de acceso se encuentra en el arbol de navidad. Recuerda todas las respuestas son numéricas 
-            y tienes 5 intentos para acceder. Si tienes que usar la calculadora o Google hazlo desde otro movil`).toLowerCase();
+            La clave de acceso se encuentra en el árbol de navidad. Recuerda todas las respuestas son numéricas 
+            y tienes 3 intentos para acceder. Si tienes que usar la calculadora o Google hazlo desde otro móvil`).toLowerCase();
         if (userInput === keyword) {
             typeText(outputDiv, "Hola Andrea! Papa Noel te ha traido un regalito pero ha tenido un problema, los elfos han perdido el codigo del candado donde guardan el regalo, vas a tener que encontrarlo para poder abrirlo.\nEscribe la respuesta al primer reto para continuar:\n\n" + challenges[0].question);
             return;
